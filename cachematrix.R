@@ -38,7 +38,7 @@ cacheSolve <- function(x, ...) {
        message("Getting Cached Data")
        return(inv)
    }
-   
+   ## otherwise, calculate the inverse
    mat.data = x$get()
    inv = solve(mat.data, ...)
    x$setinv(inv)
